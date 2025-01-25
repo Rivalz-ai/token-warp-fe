@@ -11,7 +11,7 @@ tokens:
     connections:
       - token: sealevel|solanamainnet|EobBtPkD2oJ4ADCYZ8F2j67S62cRB8VuMMnpBhrhgsRN
     decimals: 8
-    logoURI: /deployments/warp_routes/weETHs/logo.svg
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz token
     standard: EvmHypCollateral
     symbol: RIZ
@@ -21,7 +21,7 @@ tokens:
     connections:
       - token: ethereum|rivalz|0x1CAf5dB59Ac863638467d5A0C61eaf574aCb1d91
     decimals: 8
-    logoURI: /deployments/warp_routes/weETHs/logo.svg
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz token
     standard: SealevelHypSynthetic
     symbol: RIZ
@@ -31,6 +31,7 @@ tokens:
     connections:
       - token: ethereum|rivalz|0x780FAaaa430B79A14c3f88b11aBc01AcfbD8dE1A
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypSynthetic
     symbol: RIZ
@@ -40,6 +41,7 @@ tokens:
     connections:
       - token: ethereum|ethereum|0x058d411ab9911F90c74f471bDC9d2Bb4Cf9B309C
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypCollateral
     symbol: RIZ
@@ -49,6 +51,7 @@ tokens:
     connections:
       - token: ethereum|rivalz|0xe13d6E58a33F8DCA7A3a6d99021d1145e3321173
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypSynthetic
     symbol: RIZ
@@ -58,6 +61,7 @@ tokens:
     connections:
       - token: ethereum|base|0x67543CF0304C19CA62AC95ba82FD4F4B40788dc1
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypCollateral
     symbol: RIZ
@@ -67,6 +71,7 @@ tokens:
     connections:
       - token: ethereum|rivalz|0xFf3242EE08883c141a317Fb27A85092aD71D5175
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypSynthetic
     symbol: RIZ
@@ -76,6 +81,7 @@ tokens:
     connections:
       - token: ethereum|arbitrum|0x083Fb956333f9c1568F66fc0d0BE451f31F8c46c
     decimals: 8
+    logoURI: https://api.rivalz.ai/fragmentz/logo.png
     name: Rivalz Token
     standard: EvmHypCollateral
     symbol: RIZ
