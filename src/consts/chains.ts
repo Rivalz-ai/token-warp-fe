@@ -1,9 +1,4 @@
-import {
-  eclipsemainnet,
-  eclipsemainnetAddresses,
-  solanamainnet,
-  solanamainnetAddresses,
-} from '@hyperlane-xyz/registry';
+import { rivalz, solanamainnet, solanamainnetAddresses } from '@hyperlane-xyz/registry';
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
 
 // A map of chain names to ChainMetadata
@@ -20,31 +15,7 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
       ? [{ http: process.env.NEXT_PUBLIC_SOLANA_RPC_URL }, ...solanamainnet.rpcUrls]
       : solanamainnet.rpcUrls,
   },
-  eclipsemainnet: {
-    ...eclipsemainnet,
-    mailbox: eclipsemainnetAddresses.mailbox,
+  rivalz: {
+    ...rivalz,
   },
-  // mycustomchain: {
-  //   protocol: ProtocolType.Ethereum,
-  //   chainId: 123123,
-  //   domainId: 123123,
-  //   name: 'mycustomchain',
-  //   displayName: 'My Chain',
-  //   nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-  //   rpcUrls: [{ http: 'https://mycustomchain-rpc.com' }],
-  //   blockExplorers: [
-  //     {
-  //       name: 'MyCustomScan',
-  //       url: 'https://mycustomchain-scan.com',
-  //       apiUrl: 'https://api.mycustomchain-scan.com/api',
-  //       family: ExplorerFamily.Etherscan,
-  //     },
-  //   ],
-  //   blocks: {
-  //     confirmations: 1,
-  //     reorgPeriod: 1,
-  //     estimateBlockTime: 10,
-  //   },
-  //   logoURI: '/logo.svg',
-  // },
 };

@@ -6,22 +6,76 @@
 tokens:
   - addressOrDenom: '0x1CAf5dB59Ac863638467d5A0C61eaf574aCb1d91'
     chainName: rivalz
-    coinGeckoId: etherfi-weeths
-    collateralAddressOrDenom: '0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88'
+    coinGeckoId: rivalz-token
+    collateralAddressOrDenom: '0x1e43FDB8e484e7Bf6bB0402577CCF3f7D9Def240'
     connections:
-      - token: sealevel|solanamainnet|93bVs9o8Nq88zxnLWwUAVfN5PXBhCcnV5sfs6AFLno8q
+      - token: sealevel|solanamainnet|EobBtPkD2oJ4ADCYZ8F2j67S62cRB8VuMMnpBhrhgsRN
     decimals: 8
     logoURI: /deployments/warp_routes/weETHs/logo.svg
-    name: rivalz - solana
+    name: Rivalz token
     standard: EvmHypCollateral
     symbol: RIZ
   - addressOrDenom: EobBtPkD2oJ4ADCYZ8F2j67S62cRB8VuMMnpBhrhgsRN
     chainName: solanamainnet
     collateralAddressOrDenom: 93bVs9o8Nq88zxnLWwUAVfN5PXBhCcnV5sfs6AFLno8q
     connections:
-      - token: rivalz|rivalz|0xef899e92DA472E014bE795Ecce948308958E25A2
+      - token: ethereum|rivalz|0x1CAf5dB59Ac863638467d5A0C61eaf574aCb1d91
     decimals: 8
     logoURI: /deployments/warp_routes/weETHs/logo.svg
-    name: Super Symbiotic LRT
+    name: Rivalz token
     standard: SealevelHypSynthetic
+    symbol: RIZ
+
+  - addressOrDenom: '0x058d411ab9911F90c74f471bDC9d2Bb4Cf9B309C'
+    chainName: ethereum
+    connections:
+      - token: ethereum|rivalz|0x780FAaaa430B79A14c3f88b11aBc01AcfbD8dE1A
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypSynthetic
+    symbol: RIZ
+  - addressOrDenom: '0x780FAaaa430B79A14c3f88b11aBc01AcfbD8dE1A'
+    chainName: rivalz
+    collateralAddressOrDenom: '0x1e43FDB8e484e7Bf6bB0402577CCF3f7D9Def240'
+    connections:
+      - token: ethereum|ethereum|0x058d411ab9911F90c74f471bDC9d2Bb4Cf9B309C
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypCollateral
+    symbol: RIZ
+
+  - addressOrDenom: '0x67543CF0304C19CA62AC95ba82FD4F4B40788dc1'
+    chainName: base
+    connections:
+      - token: ethereum|rivalz|0xe13d6E58a33F8DCA7A3a6d99021d1145e3321173
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypSynthetic
+    symbol: RIZ
+  - addressOrDenom: '0xe13d6E58a33F8DCA7A3a6d99021d1145e3321173'
+    chainName: rivalz
+    collateralAddressOrDenom: '0x1e43FDB8e484e7Bf6bB0402577CCF3f7D9Def240'
+    connections:
+      - token: ethereum|base|0x67543CF0304C19CA62AC95ba82FD4F4B40788dc1
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypCollateral
+    symbol: RIZ
+
+  - addressOrDenom: '0x083Fb956333f9c1568F66fc0d0BE451f31F8c46c'
+    chainName: arbitrum
+    connections:
+      - token: ethereum|rivalz|0xFf3242EE08883c141a317Fb27A85092aD71D5175
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypSynthetic
+    symbol: RIZ
+  - addressOrDenom: '0xFf3242EE08883c141a317Fb27A85092aD71D5175'
+    chainName: rivalz
+    collateralAddressOrDenom: '0x1e43FDB8e484e7Bf6bB0402577CCF3f7D9Def240'
+    connections:
+      - token: ethereum|arbitrum|0x083Fb956333f9c1568F66fc0d0BE451f31F8c46c
+    decimals: 8
+    name: Rivalz Token
+    standard: EvmHypCollateral
     symbol: RIZ

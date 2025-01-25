@@ -158,13 +158,17 @@ async function initWarpContext(
     const chainsInTokens = Array.from(new Set(coreConfig.tokens.map((t) => t.chainName)));
     // Pre-load registry content to avoid repeated requests
     await registry.listRegistryContent();
+
     const { chainMetadata, chainMetadataWithOverrides } = await assembleChainMetadata(
       chainsInTokens,
       registry,
       storeMetadataOverrides,
     );
     const multiProvider = new MultiProtocolProvider(chainMetadataWithOverrides);
+    console.log('provider', multiProvider, { coreConfig });
     const warpCore = WarpCore.FromConfig(multiProvider, coreConfig);
+    console.log('warpCore', warpCore);
+
     return { registry, chainMetadata, multiProvider, warpCore };
   } catch (error) {
     toast.error('Error initializing warp context. Please check connection status and configs.');
