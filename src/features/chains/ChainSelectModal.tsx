@@ -1,5 +1,7 @@
 import { ChainMetadata } from '@hyperlane-xyz/sdk';
 import { ChainSearchMenu, ChainSearchMenuProps, Modal } from '@hyperlane-xyz/widgets';
+import { useMemo } from 'react';
+import { RIVALZ_LOGO } from '../../consts/app';
 import { useStore } from '../store';
 
 export function ChainSelectListModal({
@@ -26,10 +28,20 @@ export function ChainSelectListModal({
     close();
   };
 
+  const chainMetadataModified = useMemo(() => {
+    return {
+      ...chainMetadata,
+      rivalz: {
+        ...chainMetadata.rivalz,
+        logoURI: RIVALZ_LOGO,
+      },
+    };
+  }, [chainMetadata]);
+
   return (
     <Modal isOpen={isOpen} close={close} panelClassname="p-4 sm:p-5 max-w-lg min-h-[40vh]">
       <ChainSearchMenu
-        chainMetadata={chainMetadata}
+        chainMetadata={chainMetadataModified}
         onClickChain={onSelectChain}
         overrideChainMetadata={chainMetadataOverrides}
         onChangeOverrideMetadata={setChainMetadataOverrides}

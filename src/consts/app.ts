@@ -7,9 +7,13 @@ export const MAIN_FONT = SpaceGrotesk({
   preload: true,
   fallback: ['sans-serif'],
 });
-export const APP_NAME = 'Hyperlane Warp UI Template';
-export const APP_DESCRIPTION = 'A DApp for Hyperlane Warp Route transfers';
-export const APP_URL = 'hyperlane-warp-template.vercel.app';
+export const APP_NAME = 'Rivalz Ai';
+export const APP_DESCRIPTION =
+  'Rivalz is creating the World Abstraction Layer for AI and AI Agents.';
+export const APP_URL = 'rivalz.ai';
 export const BRAND_COLOR = Color.primary['500'];
 export const BACKGROUND_COLOR = Color.primary['500'];
-export const BACKGROUND_IMAGE = 'url(/backgrounds/main.svg)';
+export const BACKGROUND_IMAGE = 'url(/backgrounds/rivalz-bg.png)';
+
+export const RIVALZ_CHAIN = 'rivalz';
+export const RIVALZ_LOGO = '/rivalz-logo.png';

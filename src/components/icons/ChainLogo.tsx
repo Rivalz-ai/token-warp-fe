@@ -1,6 +1,7 @@
 import { ChainLogo as ChainLogoInner } from '@hyperlane-xyz/widgets';
 import Image from 'next/image';
 import { useMemo } from 'react';
+import { RIVALZ_CHAIN, RIVALZ_LOGO } from '../../consts/app';
 import { useChainMetadata } from '../../features/chains/hooks';
 import { useStore } from '../../features/store';
 
@@ -20,7 +21,7 @@ export function ChainLogo({
     const logoUri = chainMetadata?.logoURI;
     const Icon = logoUri
       ? (props: { width: number; height: number; title?: string }) => (
-          <Image src={logoUri} alt="" {...props} />
+          <Image src={chainName === RIVALZ_CHAIN ? RIVALZ_LOGO : logoUri} alt="" {...props} />
         )
       : undefined;
     return {
